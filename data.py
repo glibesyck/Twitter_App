@@ -59,4 +59,6 @@ def generating_map(users:list):
         fg_friends.add_child(folium.Marker(location=[user[1], user[2]], 
         popup=user[0], icon=folium.Icon()))
     map.add_child(fg_friends)
-    map.save('templates/friends.html')
+    map.save('templates/friends.html') 
+    #or return map._repr_html_() and don't save to templates
+    
